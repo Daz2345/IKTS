@@ -1,14 +1,34 @@
 <head>
-  <title>IKTS</title>
+    <title>IKTS</title>
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
+    <header class="ui center aligned page grid">
+        <div class="column">
+            <i class="massive trophy icon orange"></i>
+            <h1>I Know The Score!</h1>
+        </div>
 
-  {{> hello}}
+    </header>
+
+
+
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="home">
+    <div id="main">
+        
+        <h3 class="ui center aligned page grid">Fixtures this week</h3>
+        {{#if searching}}
+            <i class="huge spinner loading icon ui center aligned page grid"></i>
+        {{else}}
+            {{> fixturesList}}
+        {{/if}}
+    </div>
+    
+    <footer class="ui doubling two column center aligned grid">
+        <div class="column"><i class="huge comments icon"></i>Banter</div>
+        <div class="column"><i class="huge table icon"></i>Scores</div>
+    </footer>
+
 </template>
