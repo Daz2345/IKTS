@@ -1,9 +1,9 @@
 # IKTS - I Know The Score
 
 <h3>The Scoring System.</h3>
-<p>Perfect Score: 30 points. So if Man Utd vs Swansea is 2-1 and you predict 2-1. Note: Predicting 1-2 is considered an incorrect score and gets you -10 points.</p>
-<p>Correctly Predicting a draw: 20 points. So if Man Utd vs Swansea is 1-1 and you have predicted 0-0/2-2 etc. Obviously if you predicted 1-1 you would get 30 points for a correct score.</p>
-<p>Correct Resut + Correct Goal Difference: 15 points. So If Man Utd vs Swansea is 2-1 and you have predicted 1-0/3-2 etc.</p>
+<p>Perfect Score: 30 points.<br> So if Man Utd vs Swansea is 2-1 and you predict 2-1. Note: Predicting 1-2 is considered an incorrect score and gets you -10 points.</p>
+<p>Correctly Predicting a draw: 20 points.<br> So if Man Utd vs Swansea is 1-1 and you have predicted 0-0/2-2 etc. Obviously if you predicted 1-1 you would get 30 points for a correct score.</p>
+<p>Correct Resut + Correct Goal Difference: 15 points. <br>So If Man Utd vs Swansea is 2-1 and you have predicted 1-0/3-2 etc.</p>
 <p>Correct Result: 10 points. So if Man Utd vs Swansea is 2-1 and you predict 2-0/3-1/4-0 etc.</p>
 <p>Incorrect Result: -10 points. Pretty self-explanatory. </p>
 
