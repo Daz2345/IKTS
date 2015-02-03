@@ -1,12 +1,8 @@
 <template name="fixturesList">
     <div class="fixtures ui center aligned page grid">
-
-        {{#if searching}}
-            <p>Searching...</p>
-        {{else}}
-            {{#each fixtures}}
-                {{> fixtureItem}}
-            {{/each}}
-        {{/if}}
+        <h3>Fixtures this week</h3> 
+        {{#each fixtures}}
+            {{> fixtureItem}}
+        {{/each}}
     </div>            
 </template>

@@ -1,0 +1,18 @@
+<template name="home">
+    <div id="main">
+
+        {{#if searching}}
+            {{> search}}
+        {{else}}        
+            {{> fixturesList}} 
+        {{/if}}
+    </div>
+
+    <div class="ui doubling four column center aligned grid">
+        <a href="{{pathFor 'Banter'}}"><button class="ui button"><i class=" comments icon"></i>Banter</button></a>
+        <a href="{{pathFor 'Scores'}}"><button class="ui button"><i class="trophy icon"></i>Scores</button></a>
+        <a href="{{pathFor 'Settings'}}"><button class="ui button"><i class="settings icon"></i>Settings</button></a>
+        <a href="{{pathFor 'standingsList'}}"><button class="ui button"><i class="bar chart icon"></i>Standings</button></a>
+    </div>
+
+</template>

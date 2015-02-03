@@ -3,9 +3,3 @@ Template.fixturesList.helpers({
         return Fixture.find()
     }
 });
-
-Template.home.helpers({
-    searching: function () {
-        return Session.get('searching');
-    }
-});

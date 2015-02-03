@@ -3,32 +3,16 @@
 </head>
 
 <body>
-    <header class="ui center aligned page grid">
+    <div class="ui center aligned page grid">
         <div class="column">
-            <i class="massive trophy icon orange"></i>
-            <h1>I Know The Score!</h1>
+            {{> Header}}
         </div>
-
-    </header>
-
-
-
+    </div>
 </body>
 
-<template name="home">
-    <div id="main">
-        
-        <h3 class="ui center aligned page grid">Fixtures this week</h3>
-        {{#if searching}}
-            <i class="huge spinner loading icon ui center aligned page grid"></i>
-        {{else}}
-            {{> fixturesList}}
-        {{/if}}
-    </div>
-    
-    <footer class="ui doubling two column center aligned grid">
-        <div class="column"><i class="huge comments icon"></i>Banter</div>
-        <div class="column"><i class="huge table icon"></i>Scores</div>
-    </footer>
+<template name="Header">
+
+    <a href="{{pathFor 'Home'}}"><i class="massive ticket icon orange"></i></a>
+    <h1>I Know The Score!</h1>
 
 </template>

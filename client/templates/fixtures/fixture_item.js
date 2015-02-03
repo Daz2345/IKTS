@@ -4,7 +4,9 @@
 
     Tracker.autorun(function () {
         var searchHandle = Meteor.subscribe('fixturesList');
+        var searchHandle2 = Meteor.subscribe('standingsList');
         Session.set('searching', !searchHandle.ready());
+        Session.set('searching2', !searchHandle2.ready());
     });
 
 

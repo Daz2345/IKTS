@@ -5,10 +5,12 @@
 # but you can also edit it by hand.
 
 meteor-platform
-insecure
 underscore
-accounts-base
-accounts-ui
-iron:router
 http
 nooitaf:semantic-ui
+momentjs:moment
+iron:router
+insecure
+accounts-base
+accounts-ui
+qazuor:animated-border-menus

@@ -1,0 +1,27 @@
+<template name="standingsList">
+    <div class="ui doubling four column center aligned grid">
+        <h1>Standings</h1>
+    </div>
+    <table class="ui celled striped nine column table">
+        <thead>
+            <tr>
+                <th class="center aligned">Position</th>
+                <th class="center aligned">Team</th>
+                <th class="center aligned">Played</th>
+                <th class="center aligned">Won</th>
+                <th class="center aligned">Drawn</th>
+                <th class="center aligned">Lost</th>
+                <th class="center aligned">Scored</th>
+                <th class="center aligned">Against</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each standings}} {{> standingItem}} {{/each}}
+        </tbody>
+    </table>
+    <div class="ui doubling four column center aligned grid">
+        <a href="{{pathFor 'Home'}}">
+            <button class="ui button"><i class="home icon"></i>Home</button>
+        </a>
+    </div>
+</template>
