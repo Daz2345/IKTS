@@ -3,16 +3,60 @@
 </head>
 
 <body>
-    <div class="ui center aligned page grid">
+    <div class="ui center aligned grid">
         <div class="column">
             {{> Header}}
         </div>
     </div>
+     
+    
 </body>
 
 <template name="Header">
 
     <a href="{{pathFor 'Home'}}"><i class="massive ticket icon orange"></i></a>
-    <h1>I Know The Score!</h1>
+        <h1>I Know The Score!</h1>
+    <div class="ui divider"></div>
 
+</template>
+
+<template name="Buttons">
+    <br>
+    <br>
+    <br>
+    <div class="ui aligned centered grid huge buttons">
+        
+        <a href="{{pathFor 'Banter'}}">
+            <div class="ui animated fade button">
+                <div class="hidden content"><i class="comments icon"></i>
+                </div>
+                <div class="visible content">Banter</div>
+            </div>
+        </a>
+
+        <a href="{{pathFor 'Scores'}}">
+            <div class="ui animated fade button">
+                <div class="hidden content"><i class="bar chart icon"></i>
+                </div>
+                <div class="visible content">Scores</div>
+            </div>
+        </a>
+
+        <a href="{{pathFor 'Settings'}}">
+            <div class="ui animated fade button">
+                <div class="hidden content"><i class="settings icon"></i>
+                </div>
+                <div class="visible content">Settings</div>
+            </div>
+        </a>
+
+        <a href="{{pathFor 'standingsList'}}">
+            <div class="ui animated fade button">
+                <div class="hidden content"><i class="trophy icon"></i>
+                </div>
+                <div class="visible content">Standings</div>
+            </div>
+        </a>
+
+    </div>
 </template>

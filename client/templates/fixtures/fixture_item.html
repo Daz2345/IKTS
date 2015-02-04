@@ -1,7 +1,7 @@
 <template name="fixtureItem">
     {{#if fullTime 'FT' }}
-        <h5><a href="{{url}}">{{HomeTeam}} {{HomeScore}} - {{AwayScore}} {{AwayTeam}}</a></h5>
+        <li>{{HomeTeam}} {{HomeScore}} - {{AwayScore}} {{AwayTeam}}</li>
     {{else}}
-        <h5><a href="{{url}}">{{HomeTeam}} v {{AwayTeam}} @ {{MatchTime}} - {{MatchDate}}</a></h5>
+        <li><strong>{{HomeTeam}}</strong> v <strong>{{AwayTeam}}</strong> - {{MatchDate}} @ {{MatchTime}}</li>
     {{/if}}
 </template>
